@@ -1,6 +1,6 @@
 # Maintainer: Nigel Michki <nigeil@yahoo.com>
 pkgname=sonic-pi-git
-pkgver=v2.10.0.r740.g1f1f098
+pkgver=v2.11.0.r148.g63c6dc1
 pkgrel=1
 pkgdesc="A music-centric programming environment, originally built for the raspberry pi."
 arch=('i686' 
@@ -16,11 +16,12 @@ depends=('sed'
 	 'qscintilla-qt5'
 	 'jack'
     'aubio'
-    'qwt-qt5')
+    'qwt-qt5-opengl')
 makedepends=('cmake'
 	     'git'
 	     'supercollider'
-        'qt5-tools')
+        'qt5-tools'
+        'boost')
 optdepends=('qjackctl: for graphical jackd spawning/configuration'
 	    'jack2: better jackd if you want to use without gui'
        'sc3-plugins-git: plugins for supercollider'
